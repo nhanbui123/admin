@@ -1,1 +1,179 @@
-*{margin: 0; padding: 0;} 
+*{margin: 0; padding: 0;}
+
+.menu-left i {
+    font-size: 24px;
+    color: #ff6000;
+    font-weight: bold;
+}
+
+.sidebar-wrapper ul.nav li a {padding-left: 25px;padding-right: 25px;}
+
+ul.nav p {
+    display: inline;
+}
+
+p {}
+
+a.dropdown-item {
+    padding: 20px;
+}
+
+body,html {
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+ul.nav.menu-left {display: block;height: 100%;margin-top: 20px!important;}
+
+ul.nav.nav.menu-left li {
+    position: relative;
+    display: block;
+}
+
+ul.nav.nav.menu-left li:before {
+    content: '';
+    position: absolute;
+    background: black;
+    border: 20px solid white;
+    right: 0;
+    border-right: 20px solid #f4f3ef;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+ul.nav.nav.menu-left li.active:before {
+    content: '';
+    position: absolute;
+    background: black;
+    border: 20px solid white;
+    right: 0;
+    border-right: 20px solid #f4f3ef;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+ul.nav.nav.menu-left p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 41px;
+    font-weight: 700;
+}
+
+ul.nav.nav.menu-left a {
+    color: black;
+    display: block;
+    padding: 20px 0;
+    margin: 0 25px;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+button.navbar-toggler.d-lg-none {
+    border: none;
+    font-size: 16px;
+}
+
+span.navbar-toggler-icon {}
+
+nav.navbar.navbar-expand-md.navbar-light {
+    padding: 17px;
+    border-bottom: 1px solid #0000001f;
+    line-height: 0px;
+    box-sizing: border-box;
+}
+
+a.navbar-brand {
+    font-weight: 900;
+}
+
+nav.navbar.navbar-expand-md.navbar-light .container-fluid {
+    padding: 0!important;
+}
+
+.logo {
+    padding: 21px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(102, 97, 91, 0.3);
+    margin: 0 20px;
+}
+
+.sidebar-wrapper {
+    height: 100%;
+    box-shadow: inset -1px 0px 0px 0px #DDDDDD;
+}
+
+ul.nav.navbar-nav.text-xs-center.float-sm-right {
+    margin-left: auto;
+}
+
+.main-panel {width: calc(100% - 260px);position: relative;float: right;height: 100%;background: #f4f3ef;}
+
+.sidebar {
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background: white;
+} 
+/*// dieu chinh breakpoint xuat hien menu icon*/
+@media (max-width: 986px) {
+    .navbar-header {
+            float: none;
+    }
+   
+.navbar-expand-md .navbar-toggler {
+    display: block;
+}
+
+button.navbar-toggle {
+border: none;
+}
+
+.navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+            display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+            float: none!important;
+            margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+            float: none;
+    }
+    .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+    }
+    
+    
+}
+.logo a{
+    
+text-decoration: none;
+    
+font-size: 16px;
+    
+text-transform: uppercase;
+    
+color: black;
+    
+font-weight: 900;
+}
